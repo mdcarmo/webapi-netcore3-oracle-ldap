@@ -1,0 +1,95 @@
+[2019-10-31 12:52:51.7158][M15767][DEBUG] init main 
+[2019-10-31 12:52:57.9723][M15767][INFO] Now listening on: http://localhost:5000 
+[2019-10-31 12:52:57.9851][M15767][INFO] Application started. Press Ctrl+C to shut down. 
+[2019-10-31 12:52:57.9851][M15767][INFO] Hosting environment: Development 
+[2019-10-31 12:52:57.9851][M15767][INFO] Content root path: C:\dev\ArchRef-SmallApiOracle\SmallApi 
+[2019-10-31 12:53:53.1756][M15767][DEBUG] init main 
+[2019-10-31 12:53:54.5880][M15767][INFO] Now listening on: http://localhost:5000 
+[2019-10-31 12:53:54.5970][M15767][INFO] Application started. Press Ctrl+C to shut down. 
+[2019-10-31 12:53:54.5970][M15767][INFO] Hosting environment: Development 
+[2019-10-31 12:53:54.5970][M15767][INFO] Content root path: C:\dev\ArchRef-SmallApiOracle\SmallApi 
+[2019-10-31 12:53:57.4853][M15767][DEBUG] Applying FluentValidation rules to swagger schema for type 'SmallApi.Dto.PersonDTO'. 
+[2019-10-31 12:53:57.4853][M15767][DEBUG] Rule 'Required' applied for property 'PersonDTO.firstName' 
+[2019-10-31 12:53:57.4853][M15767][DEBUG] Rule 'NotEmpty' applied for property 'PersonDTO.firstName' 
+[2019-10-31 12:53:57.4853][M15767][DEBUG] Rule 'Length' applied for property 'PersonDTO.firstName' 
+[2019-10-31 12:53:57.4853][M15767][DEBUG] Rule 'Required' applied for property 'PersonDTO.lastName' 
+[2019-10-31 12:53:57.4853][M15767][DEBUG] Rule 'NotEmpty' applied for property 'PersonDTO.lastName' 
+[2019-10-31 12:53:57.5034][M15767][DEBUG] Rule 'Between' applied for property 'PersonDTO.age' 
+[2019-10-31 12:53:57.5034][M15767][DEBUG] Rule 'Required' applied for property 'PersonDTO.type' 
+[2019-10-31 12:53:57.5034][M15767][DEBUG] Rule 'NotEmpty' applied for property 'PersonDTO.type' 
+[2019-10-31 12:53:57.5034][M15767][DEBUG] Rule 'Required' applied for property 'PersonDTO.active' 
+[2019-10-31 12:53:57.5034][M15767][DEBUG] Rule 'NotEmpty' applied for property 'PersonDTO.active' 
+[2019-10-31 12:53:57.5034][M15767][DEBUG] Rule 'Pattern' applied for property 'PersonDTO.email' 
+[2019-10-31 12:53:57.5034][M15767][DEBUG] Rule 'Comparison' applied for property 'PersonDTO.register' 
+[2019-10-31 13:35:39.8497][M15767][DEBUG] init main 
+[2019-10-31 13:35:42.1059][M15767][INFO] Now listening on: http://localhost:5000 
+[2019-10-31 13:35:42.1170][M15767][INFO] Application started. Press Ctrl+C to shut down. 
+[2019-10-31 13:35:42.1170][M15767][INFO] Hosting environment: Development 
+[2019-10-31 13:35:42.1170][M15767][INFO] Content root path: C:\dev\ArchRef-SmallApiOracle\SmallApi 
+[2019-10-31 13:35:45.5913][M15767][DEBUG] Applying FluentValidation rules to swagger schema for type 'SmallApi.Dto.PersonDTO'. 
+[2019-10-31 13:35:45.5950][M15767][DEBUG] Rule 'Required' applied for property 'PersonDTO.firstName' 
+[2019-10-31 13:35:45.5950][M15767][DEBUG] Rule 'NotEmpty' applied for property 'PersonDTO.firstName' 
+[2019-10-31 13:35:45.5950][M15767][DEBUG] Rule 'Length' applied for property 'PersonDTO.firstName' 
+[2019-10-31 13:35:45.5950][M15767][DEBUG] Rule 'Required' applied for property 'PersonDTO.lastName' 
+[2019-10-31 13:35:45.6108][M15767][DEBUG] Rule 'NotEmpty' applied for property 'PersonDTO.lastName' 
+[2019-10-31 13:35:45.6108][M15767][DEBUG] Rule 'Between' applied for property 'PersonDTO.age' 
+[2019-10-31 13:35:45.6108][M15767][DEBUG] Rule 'Required' applied for property 'PersonDTO.type' 
+[2019-10-31 13:35:45.6108][M15767][DEBUG] Rule 'NotEmpty' applied for property 'PersonDTO.type' 
+[2019-10-31 13:35:45.6108][M15767][DEBUG] Rule 'Required' applied for property 'PersonDTO.active' 
+[2019-10-31 13:35:45.6261][M15767][DEBUG] Rule 'NotEmpty' applied for property 'PersonDTO.active' 
+[2019-10-31 13:35:45.6261][M15767][DEBUG] Rule 'Pattern' applied for property 'PersonDTO.email' 
+[2019-10-31 13:35:45.6261][M15767][DEBUG] Rule 'Comparison' applied for property 'PersonDTO.register' 
+[2019-10-31 13:37:42.1282][M15767][DEBUG] init main 
+[2019-10-31 13:37:43.7569][M15767][INFO] Now listening on: http://localhost:5000 
+[2019-10-31 13:37:43.7569][M15767][INFO] Application started. Press Ctrl+C to shut down. 
+[2019-10-31 13:37:43.7569][M15767][INFO] Hosting environment: Development 
+[2019-10-31 13:37:43.7569][M15767][INFO] Content root path: C:\dev\ArchRef-SmallApiOracle\SmallApi 
+[2019-10-31 13:37:46.3255][M15767][DEBUG] Applying FluentValidation rules to swagger schema for type 'SmallApi.Dto.PersonDTO'. 
+[2019-10-31 13:37:46.3286][M15767][DEBUG] Rule 'Required' applied for property 'PersonDTO.firstName' 
+[2019-10-31 13:37:46.3286][M15767][DEBUG] Rule 'NotEmpty' applied for property 'PersonDTO.firstName' 
+[2019-10-31 13:37:46.3286][M15767][DEBUG] Rule 'Length' applied for property 'PersonDTO.firstName' 
+[2019-10-31 13:37:46.3286][M15767][DEBUG] Rule 'Required' applied for property 'PersonDTO.lastName' 
+[2019-10-31 13:37:46.3286][M15767][DEBUG] Rule 'NotEmpty' applied for property 'PersonDTO.lastName' 
+[2019-10-31 13:37:46.3286][M15767][DEBUG] Rule 'Between' applied for property 'PersonDTO.age' 
+[2019-10-31 13:37:46.3436][M15767][DEBUG] Rule 'Required' applied for property 'PersonDTO.type' 
+[2019-10-31 13:37:46.3436][M15767][DEBUG] Rule 'NotEmpty' applied for property 'PersonDTO.type' 
+[2019-10-31 13:37:46.3436][M15767][DEBUG] Rule 'Required' applied for property 'PersonDTO.active' 
+[2019-10-31 13:37:46.3436][M15767][DEBUG] Rule 'NotEmpty' applied for property 'PersonDTO.active' 
+[2019-10-31 13:37:46.3436][M15767][DEBUG] Rule 'Pattern' applied for property 'PersonDTO.email' 
+[2019-10-31 13:37:46.3436][M15767][DEBUG] Rule 'Comparison' applied for property 'PersonDTO.register' 
+[2019-10-31 13:39:53.9480][M15767][DEBUG] init main 
+[2019-10-31 13:40:00.7583][M15767][INFO] Now listening on: http://localhost:5000 
+[2019-10-31 13:40:00.7644][M15767][INFO] Application started. Press Ctrl+C to shut down. 
+[2019-10-31 13:40:00.7644][M15767][INFO] Hosting environment: Development 
+[2019-10-31 13:40:00.7644][M15767][INFO] Content root path: C:\dev\ArchRef-SmallApiOracle\SmallApi 
+[2019-10-31 13:40:03.3154][M15767][DEBUG] Applying FluentValidation rules to swagger schema for type 'SmallApi.Dto.PersonDTO'. 
+[2019-10-31 13:40:03.3154][M15767][DEBUG] Rule 'Required' applied for property 'PersonDTO.firstName' 
+[2019-10-31 13:40:03.3154][M15767][DEBUG] Rule 'NotEmpty' applied for property 'PersonDTO.firstName' 
+[2019-10-31 13:40:03.3154][M15767][DEBUG] Rule 'Length' applied for property 'PersonDTO.firstName' 
+[2019-10-31 13:40:03.3290][M15767][DEBUG] Rule 'Required' applied for property 'PersonDTO.lastName' 
+[2019-10-31 13:40:03.3290][M15767][DEBUG] Rule 'NotEmpty' applied for property 'PersonDTO.lastName' 
+[2019-10-31 13:40:03.3290][M15767][DEBUG] Rule 'Between' applied for property 'PersonDTO.age' 
+[2019-10-31 13:40:03.3290][M15767][DEBUG] Rule 'Required' applied for property 'PersonDTO.type' 
+[2019-10-31 13:40:03.3290][M15767][DEBUG] Rule 'NotEmpty' applied for property 'PersonDTO.type' 
+[2019-10-31 13:40:03.3454][M15767][DEBUG] Rule 'Required' applied for property 'PersonDTO.active' 
+[2019-10-31 13:40:03.3454][M15767][DEBUG] Rule 'NotEmpty' applied for property 'PersonDTO.active' 
+[2019-10-31 13:40:03.3454][M15767][DEBUG] Rule 'Pattern' applied for property 'PersonDTO.email' 
+[2019-10-31 13:40:03.3454][M15767][DEBUG] Rule 'Comparison' applied for property 'PersonDTO.register' 
+[2019-10-31 13:41:37.2144][M15767][DEBUG] init main 
+[2019-10-31 13:41:39.0301][M15767][INFO] Now listening on: http://localhost:5000 
+[2019-10-31 13:41:39.0301][M15767][INFO] Application started. Press Ctrl+C to shut down. 
+[2019-10-31 13:41:39.0301][M15767][INFO] Hosting environment: Development 
+[2019-10-31 13:41:39.0301][M15767][INFO] Content root path: C:\dev\ArchRef-SmallApiOracle\SmallApi 
+[2019-10-31 13:41:42.0094][M15767][DEBUG] Applying FluentValidation rules to swagger schema for type 'SmallApi.Dto.PersonDTO'. 
+[2019-10-31 13:41:42.0094][M15767][DEBUG] Rule 'Required' applied for property 'PersonDTO.firstName' 
+[2019-10-31 13:41:42.0165][M15767][DEBUG] Rule 'NotEmpty' applied for property 'PersonDTO.firstName' 
+[2019-10-31 13:41:42.0165][M15767][DEBUG] Rule 'Length' applied for property 'PersonDTO.firstName' 
+[2019-10-31 13:41:42.0165][M15767][DEBUG] Rule 'Required' applied for property 'PersonDTO.lastName' 
+[2019-10-31 13:41:42.0165][M15767][DEBUG] Rule 'NotEmpty' applied for property 'PersonDTO.lastName' 
+[2019-10-31 13:41:42.0165][M15767][DEBUG] Rule 'Between' applied for property 'PersonDTO.age' 
+[2019-10-31 13:41:42.0300][M15767][DEBUG] Rule 'Required' applied for property 'PersonDTO.type' 
+[2019-10-31 13:41:42.0300][M15767][DEBUG] Rule 'NotEmpty' applied for property 'PersonDTO.type' 
+[2019-10-31 13:41:42.0300][M15767][DEBUG] Rule 'Required' applied for property 'PersonDTO.active' 
+[2019-10-31 13:41:42.0300][M15767][DEBUG] Rule 'NotEmpty' applied for property 'PersonDTO.active' 
+[2019-10-31 13:41:42.0300][M15767][DEBUG] Rule 'Pattern' applied for property 'PersonDTO.email' 
+[2019-10-31 13:41:42.0300][M15767][DEBUG] Rule 'Comparison' applied for property 'PersonDTO.register' 

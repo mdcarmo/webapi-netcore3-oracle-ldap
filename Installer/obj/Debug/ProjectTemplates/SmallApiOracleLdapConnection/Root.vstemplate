@@ -1,0 +1,23 @@
+﻿<VSTemplate Version="3.0.0" Type="ProjectGroup" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+  <TemplateData>
+    <Name>Arch-Ref Small Api Oracle LDAP Connection</Name>
+    <Description>Arch-Ref Small Api Oracle LDAP Connection</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>Scania.YourProject</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>Icon.png</Icon>
+  </TemplateData>
+  <TemplateContent>
+	<ProjectCollection>
+            <ProjectTemplateLink ProjectName="$safeprojectname$.Api" CopyParameters="true" >
+                SmallApiOracleLdapConnection\SmallApiOracleLdapConnection.vstemplate
+            </ProjectTemplateLink>
+	</ProjectCollection>
+  </TemplateContent>
+</VSTemplate>

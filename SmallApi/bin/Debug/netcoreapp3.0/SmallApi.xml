@@ -1,0 +1,256 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SmallApi</name>
+    </assembly>
+    <members>
+        <member name="T:SmallApi.Controllers.PersonsController">
+            <summary>
+            Async Operations 
+            </summary>
+        </member>
+        <member name="M:SmallApi.Controllers.PersonsController.#ctor(SmallApi.Domain.Contracts.IPersonManager,AutoMapper.IMapper,Microsoft.Extensions.Logging.ILogger{SmallApi.Controllers.PersonsController})">
+            <summary>
+            Contructor
+            </summary>
+            <param name="personManager">Manager Person</param>
+            <param name="mapper">Automapper Dto to Person and Person to DTO</param>
+            <param name="logger">logger with NLOG</param>
+        </member>
+        <member name="M:SmallApi.Controllers.PersonsController.Get">
+            <summary>
+            Get all persons example
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmallApi.Controllers.PersonsController.Get(System.String)">
+            <summary>
+            Get person by id example
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmallApi.Controllers.PersonsController.GetByProcedure">
+            <summary>
+            Get all persons by procedure
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmallApi.Controllers.PersonsController.Post(SmallApi.Dto.PersonDTO)">
+            <summary>
+            Insert a person example
+            </summary>
+            <param name="dto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmallApi.Controllers.PersonsController.Put(System.Int32,SmallApi.Dto.PersonDTO)">
+            <summary>
+            Update a person example
+            </summary>
+            <param name="id"></param>
+            <param name="dto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmallApi.Controllers.PersonsController.Delete(System.Int32)">
+            <summary>
+            Delete a person example
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SmallApi.Domain.Infra.OracleObjects.BaseOracleDao">
+            <summary>
+            Base Access Repository
+            </summary>
+        </member>
+        <member name="M:SmallApi.Domain.Infra.OracleObjects.BaseOracleDao.#ctor(Microsoft.Extensions.Options.IOptions{SmallApi.Domain.Infra.OracleObjects.OracleSettings})">
+            <summary>
+            
+            </summary>
+            <param name="oracleSettings"></param>
+        </member>
+        <member name="M:SmallApi.Domain.Infra.OracleObjects.OracleDynamicParameters.#ctor">
+            <summary>
+            construct a dynamic parameter bag
+            </summary>
+        </member>
+        <member name="M:SmallApi.Domain.Infra.OracleObjects.OracleDynamicParameters.#ctor(System.Object)">
+            <summary>
+            construct a dynamic parameter bag
+            </summary>
+            <param name="template">can be an anonymous type or a DynamicParameters bag</param>
+        </member>
+        <member name="M:SmallApi.Domain.Infra.OracleObjects.OracleDynamicParameters.AddDynamicParams(System.Object)">
+            <summary>
+            Append a whole object full of params to the dynamic
+            EG: AddDynamicParams(new {A = 1, B = 2}) // will add property A and B to the dynamic
+            </summary>
+            <param name="param"></param>
+        </member>
+        <member name="M:SmallApi.Domain.Infra.OracleObjects.OracleDynamicParameters.Add(System.String,System.Object,System.Nullable{Oracle.ManagedDataAccess.Client.OracleDbType},System.Nullable{System.Data.ParameterDirection},System.Nullable{System.Int32})">
+            <summary>
+            Add a parameter to this dynamic parameter list
+            </summary>
+            <param name="name"></param>
+            <param name="value"></param>
+            <param name="dbType"></param>
+            <param name="direction"></param>
+            <param name="size"></param>
+        </member>
+        <member name="M:SmallApi.Domain.Infra.OracleObjects.OracleDynamicParameters.AddParameters(System.Data.IDbCommand,Dapper.SqlMapper.Identity)">
+            <summary>
+            Add all the parameters needed to the command just before it executes
+            </summary>
+            <param name="command">The raw command prior to execution</param>
+            <param name="identity">Information about the query</param>
+        </member>
+        <member name="P:SmallApi.Domain.Infra.OracleObjects.OracleDynamicParameters.ParameterNames">
+            <summary>
+            All the names of the param in the bag, use Get to yank them out
+            </summary>
+        </member>
+        <member name="M:SmallApi.Domain.Infra.OracleObjects.OracleDynamicParameters.Get``1(System.String)">
+            <summary>
+            Get the value of a parameter
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="name"></param>
+            <returns>The value, note DBNull.Value is not returned, instead the value is returned as null</returns>
+        </member>
+        <member name="T:SmallApi.Domain.Infra.Result`1">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:SmallApi.Domain.Infra.Result`1.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="F:SmallApi.Domain.Infra.Result`1._businessErrorMessages">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SmallApi.Domain.Infra.Result`1.Content">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SmallApi.Domain.Infra.Result`1.Success">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SmallApi.Domain.Infra.Result`1.HasException">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SmallApi.Domain.Infra.Result`1.ExceptionMessage">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SmallApi.Domain.Infra.Result`1.HasBusinessErrors">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SmallApi.Domain.Infra.Result`1.BusinessErrorMessages">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:SmallApi.Domain.Managers.PersonManager.#ctor(Microsoft.Extensions.Options.IOptions{SmallApi.Domain.Infra.OracleObjects.OracleSettings})">
+            <summary>
+            Personal Manager - Rules and Access Repository
+            </summary>
+            <param name="appSettings"></param>
+        </member>
+        <member name="M:SmallApi.Domain.Managers.PersonManager.GetAllAsync">
+            <summary>
+            Get all Persons
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmallApi.Domain.Managers.PersonManager.GetByIdAsync(System.Object)">
+            <summary>
+            Get person by ID
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmallApi.Domain.Managers.PersonManager.GetAllPersonByProcedure">
+            <summary>
+            Get all persons by procedure.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmallApi.Domain.Managers.PersonManager.CreateAsync(SmallApi.Domain.Entity.Person)">
+            <summary>
+            Create new person
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmallApi.Domain.Managers.PersonManager.UpdateAsync(SmallApi.Domain.Entity.Person)">
+            <summary>
+            Update a Person
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmallApi.Domain.Managers.PersonManager.DeleteAsync(System.Object)">
+            <summary>
+            Delete a Person
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmallApi.Domain.Managers.PersonManager.ExistAsync(System.Object)">
+            <summary>
+            Find Person by ID
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmallApi.Domain.Managers.PersonManager.ExistWithThisRegisterAsync(System.Object)">
+            <summary>
+            Find Person by Register
+            </summary>
+            <param name="register"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SmallApi.Startup">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:SmallApi.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            
+            </summary>
+            <param name="configuration"></param>
+        </member>
+        <member name="P:SmallApi.Startup.Configuration">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:SmallApi.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            This method gets called by the runtime. Use this method to add services to the container. 
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:SmallApi.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            This method gets called by the runtime. Use this method to configure the HTTP request pipeline. 
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>
+        </member>
+    </members>
+</doc>

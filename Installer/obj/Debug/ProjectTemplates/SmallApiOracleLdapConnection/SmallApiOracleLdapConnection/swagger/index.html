@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>%(DocumentTitle)</title>
+    <script type="text/javascript" src="https://static.scania.com/build/global/2.5.0/js/corporate-ui.js?preload=true"></script>
+    %(HeadContent)
+</head>
+<body class="scania app">
+    <c-corporate-header site-name="(NET.CORE V3.0) - API" site-url="/corporate-ui/">
+        <nav-item location="https://jwt.io/" target="_blank">Jwt.IO</nav-item>
+    </c-corporate-header>
+
+    <c-main-content style="background-color:white;">
+        <section class="light" style="background-color:white;">
+            <div class="container margin-bottom">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="swagger-ui"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </c-main-content>
+    <c-corporate-footer>
+    </c-corporate-footer>
+    <script>
+        if (window.navigator.userAgent.indexOf("Edge") > -1) {
+            console.log("Removing native Edge fetch in favor of swagger-ui's polyfill")
+            window.fetch = undefined;
+        }
+    </script>
+    <script src="./swagger-ui-bundle.js"></script>
+    <script src="./swagger-ui-standalone-preset.js"></script>
+    <style>
+        .locked::after {
+            display: none !important;
+        }
+        .locked::before {
+            background-color: transparent !important;
+        }
+    </style>
+    <script>
+        window.onload = function () {
+            var configObject = JSON.parse('%(ConfigObject)');
+            var oauthConfigObject = JSON.parse('%(OAuthConfigObject)');
+            // Apply mandatory parameters
+            configObject.dom_id = "#swagger-ui";
+            configObject.presets = [SwaggerUIBundle.presets.apis, SwaggerUIStandalonePreset];
+            configObject.layout = "StandaloneLayout";
+            // If oauth2RedirectUrl isn't specified, use the built-in default
+            if (!configObject.hasOwnProperty("oauth2RedirectUrl"))
+                configObject.oauth2RedirectUrl = window.location.href.replace("index.html", "oauth2-redirect.html");
+            // Build a system
+            const ui = SwaggerUIBundle(configObject);
+            // Apply OAuth config
+            ui.initOAuth(oauthConfigObject);
+        }
+    </script>
+</body>
+</html>
