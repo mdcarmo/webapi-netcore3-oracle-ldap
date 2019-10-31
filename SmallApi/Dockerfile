@@ -1,4 +1,4 @@
-FROM repo.br.scania.com:35007/dotnet/core/sdk:3.0 AS build
+FROM xxxxxxxxxxxxxxxxx/dotnet/core/sdk:3.0 AS build
 EXPOSE 5000
 # COPY ./nuget.config /
 WORKDIR /app
@@ -12,7 +12,7 @@ WORKDIR /app/
 COPY ./. ./
 WORKDIR /app/
 RUN dotnet publish -o out
-FROM repo.br.scania.com:35007/dotnet/core/aspnet:3.0 AS runtime
+FROM xxxxxxxxxxxxx/dotnet/core/aspnet:3.0 AS runtime
 ENV ORA_SDTZ "America/Sao_Paulo"
 ENV TZ ${ORA_SDTZ}
 RUN echo ${TZ} > /etc/timezone 
